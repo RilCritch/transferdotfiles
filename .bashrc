@@ -78,6 +78,7 @@ alias roficonf='cd /home/rc/.config/rofi/'
 #yadm stuff
 alias yadmrepo='cd /home/rc/.local/share/yadm/repo.git/'
 alias ya='yadm add'
+alias yau='yadm add -u'
 alias yaa='yadm add -A'
 alias yc='yadm commit'
 alias yp='yadm push'
@@ -114,6 +115,7 @@ alias cval='clear && colorscript -e 7'
 alias ccoltest='clear && colorscript -e 53'
 alias cc='clear'
 alias cca='clear &&'
+alias ccda='clear && pwd &&'
 alias ca='c && echo -e "\n------------------------------------------\n" &&'
 
 #utility
