@@ -1,0 +1,98 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+/*
+ * Originally minimal theme found on github
+ *
+ * I've made changes to fit my set up
+ *
+ * User: RilCritch
+ */
+
+configuration {
+  //font: "Iosevka Nerd Font Medium 12";
+  //font: "mono 14";
+  //font: "JetBrainsMono Nerd Font Medium 13";
+  font: "SauceCodePro Nerd Font Mono 12";
+  
+
+  drun {
+    //display-name: "[^.^]";
+    /*display-name: "🄳"; Letter Icon */
+    //display-name: "🛫";
+    /*display-name: ""; Symbol */
+    display-name: "D";
+  }
+
+  run {
+    //display-name: "[°.°]";
+    //display-name: "🄰";
+    //display-name: "☉";
+    display-name: "A";
+  }
+
+  window {
+    //display-name: "[*.*]";
+    /*display-name: "🅆"; Letter Icon */
+    /*display-name: ""; Symbol */
+    display-name: "W";
+    text-color: @hl;
+  }
+
+  filebrowser {
+    /*display-name: "🄵"; Letter Icon */
+    /*display-name: "📁"; Symbol */
+    display-name: "F";
+  }
+
+  timeout {
+    delay: 30;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  // bg: #151515;
+  // bg-alt: #303336;
+  // fg: #FFFFFF;
+  // fg-alt: #424242;
+
+  // not transparent
+  // bg: #1d1f21;
+  // bg-alt: #303336;
+  // fg: #c5c8c6;
+  // fg-alt: #575c58;
+
+  // transparent
+  bga: rgba(29, 31, 33, 0.75);
+  bg: rgb(29, 31, 33);
+  bg-alt: rgb(48, 51, 54);
+  fg: rgb(197, 200, 198);
+  fg-alt: rgba(87, 92, 88, 0.75);
+  hl: #5f819d;
+  hl-alt: #de935f;
+
+  // values
+  br: 5px;
+
+  background-color: @bga;
+  //background-color: transparent;
+  text-color: @fg;
+}
+
+window {
+  // anchor: north;
+  location: center;
+}
+

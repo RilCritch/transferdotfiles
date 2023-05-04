@@ -1,0 +1,172 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+/*
+ * Originally minimal theme found on github
+ *
+ * I've made changes to fit my set up
+ *
+ * User: RilCritch
+ */
+
+configuration {
+  //font: "Iosevka Nerd Font Medium 12";
+  //font: "mono 14";
+  font: "JetBrainsMono Nerd Font Medium 13";
+  //font: "SauceCodePro Nerd Font Mono 13";
+  
+
+  drun {
+    //display-name: "[^.^]";
+    /*display-name: "🄳"; Letter Icon */
+    //display-name: "🛫";
+    /*display-name: ""; Symbol */
+    display-name: "(D)";
+  }
+
+  run {
+    //display-name: "[°.°]";
+    //display-name: "🄰";
+    //display-name: "☉";
+    display-name: "(A)";
+  }
+
+  window {
+    //display-name: "[*.*]";
+    /*display-name: "🅆"; Letter Icon */
+    /*display-name: ""; Symbol */
+    display-name: "[W]";
+    text-color: @hl;
+  }
+
+  filebrowser {
+    /*display-name: "🄵"; Letter Icon */
+    /*display-name: "📁"; Symbol */
+    display-name: "[F]";
+  }
+
+  timeout {
+    delay: 30;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  // bg: #151515;
+  // bg-alt: #303336;
+  // fg: #FFFFFF;
+  // fg-alt: #424242;
+
+  // not transparent
+  // bg: #1d1f21;
+  // bg-alt: #303336;
+  // fg: #c5c8c6;
+  // fg-alt: #595f6f;
+
+  // transparent
+  bga: rgba(12, 14, 15, 0.50);
+  bg: rgb(12, 14, 15);
+  // bg-alt: rgb(59, 62, 72);
+  // bg-alt: rgb(52, 54, 55);
+  bg-alt: rgba(236, 210, 139, 0.25);
+  fg: #edeff0;
+  fg-alt: rgba(237, 239, 240, 0.30);
+  // fg-brd: rgba(236, 210, 139, 0.60);
+  fg-brd: rgba(236, 210, 139, 1.00);
+  fg-sel: #ecd28b;
+  hl: #505253;
+
+  background-color: @bga;
+  text-color: @fg;
+  cursor-color: @fg-sel;
+}
+
+window {
+  transparency: "real";
+  // children: [mainbox];
+  // width: 100%;
+  width: 1500px;
+  // background-color: @bg-alt;
+  border-radius: 7px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  // border: 4px;
+  // width: 1500px;
+  border-color: @bg;
+  border-radius: 2px;
+  background-color: @bga;
+  // padding: 5px;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @bga;
+  // border: 2px;
+  // border: 0px solid 0px solid 2px dash 0px solid;
+  border: 2px solid 0px dash; 
+  // border: 1px solid 1px solid; 
+  // border: 3px solid 3px solid 3px solid 3px solid;
+  // border: 2px solid 2px solid 2px solid 2px solid;
+  border-color: @fg-brd;
+  border-radius: 6px;
+  // margin: 0px 0px 5px 0px;
+}
+
+entry {
+  padding: 12px 0px 12px 6px;
+  //horizontal-align: 0.5;
+  placeholder: "Type here";
+  placeholder-color: @bg-alt;
+  // text-color: @hl;
+}
+
+prompt {
+  padding: 12px 6px 12px 6px;
+  // border: 0px solid 1px dash 0px solid 0px solid;
+  // border-color: @hl;
+  //padding: 12px 0 12px 12px;
+  //horizontal-align: 0.5;
+  text-color: rgba(236,210,139,0.6);
+}
+
+listview {
+  lines: 10;
+  columns: 3;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.0);
+}
+
+element {
+  // children: [element-icon, element-text];
+  children: [element-text];
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.0);
+}
+
+element-text {
+  padding: 12px;
+  text-color: @fg-alt;
+  background-color: rgba(0,0,0,0.0);
+}
+
+element-text selected {
+  // text-color: @fg;
+  text-color: @fg-sel;
+  background-color: @bg-alt;
+  // border: 2px;
+  // border-color: @fg-alt;
+}
