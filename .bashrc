@@ -77,6 +77,11 @@ alias roficonf='cd /home/rc/.config/rofi/'
 
 #yadm stuff
 alias yadmrepo='cd /home/rc/.local/share/yadm/repo.git/'
+alias ya='yadm add'
+alias yaa='yadm add -a'
+alias yc='yadm commit'
+alias yp='yadm push'
+alias ys='yadm status'
 
 #kitten aliases
 alias viewimg='kitty +kitten icat'
