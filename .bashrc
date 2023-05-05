@@ -68,6 +68,16 @@ alias nfd='sudo find / -name'
 alias ru='sudo su'
 
 #config directories
+#   terminal - old
+# alias conf='cd $HOME/.config/'
+# alias nvimconf='cd $HOME/.config/nvim/lua/custom/'
+# alias awesomeconf='cd $HOME/.config/awesome/'
+# alias bpytopconf='cd $HOME/.config/bpytop/'
+# alias kittyconf='cd $HOME/.config/kitty/'
+# alias polybarconf='cd $HOME/.config/polybar/'
+# alias roficonf='cd $HOME/.config/rofi/'
+# alias yadmconf='cd $HOME/.config/yadm/'
+# alias rangerconf='cd $HOME/.config/ranger/'
 alias conf='cd $HOME/.config/'
 alias nvimconf='cd $HOME/.config/nvim/lua/custom/'
 alias awesomeconf='cd $HOME/.config/awesome/'
@@ -77,6 +87,10 @@ alias polybarconf='cd $HOME/.config/polybar/'
 alias roficonf='cd $HOME/.config/rofi/'
 alias yadmconf='cd $HOME/.config/yadm/'
 alias rangerconf='cd $HOME/.config/ranger/'
+
+#common dirs
+# alias trash='cd $HOME/.local/share/Trash/files/ && clear && lsa'
+alias trash='ranger $HOME/.local/share/Trash/files/'
 
 #yadm stuff
 alias yadmrepo='cd $HOME/.local/share/yadm/repo.git/'
@@ -102,13 +116,12 @@ alias cat='bat'
 #alias l='ls'
 #alias l.="ls -A | egrep '^\.'"
 #alias listdir="ls -d */ > list"
-alias ls='exa --group-directories-first'
-alias lsa='exa -a --group-directories-first'
-alias lsai='exa -a --group-directories-first --icons'
-alias ll='exa -lh --group-directories-first --grid --no-filesize'
-alias lli='exa -lh --group-directories-first --grid --no-filesize --icons'
-alias lla='exa -lha --group-directories-first --grid --no-filesize'
-alias llai='exa -lha --group-directories-first --grid --no-filesize --icons'
+alias ls='exa --group-directories-first --icons'
+alias lsa='exa -a --group-directories-first --icons'
+alias ll='exa -lh --group-directories-first --grid --no-filesize --icons'
+alias lla='exa -lha --group-directories-first --grid --no-filesize --icons'
+alias lst='exa -T -L=2 --icons'
+alias lsr='exa -R -L=2 --icons'
 alias rll='exa -lh --group-directories-first'
 alias rlla='exa -lha --group-directories-first'
 
