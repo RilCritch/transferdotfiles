@@ -83,6 +83,7 @@ alias yaa='yadm add -A'
 alias yc='yadm commit'
 alias yp='yadm push'
 alias ys='yadm status'
+alias ylg='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml,$HOME/.config/lazygit/config.yml" --work-tree ~ --git-dir ~/.local/share/yadm/repo.git'
 
 #kitten aliases
 alias viewimg='kitty +kitten icat'
