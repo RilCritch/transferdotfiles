@@ -30,6 +30,7 @@ bind "set completion-ignore-case on"
 
 ### TEMP STUFF TO ADD TO MY BASH CONFIG FILES ###
 export FZF_DEFAULT_COMMAND="fd"
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 ### ALIASES - TEMP ###
 # Blur {{{
@@ -74,6 +75,8 @@ alias bpytopconf='cd /home/rc/.config/bpytop/'
 alias kittyconf='cd /home/rc/.config/kitty/'
 alias polybarconf='cd /home/rc/.config/polybar/'
 alias roficonf='cd /home/rc/.config/rofi/'
+alias yadmconf='cd /home/rc/.config/yadm/'
+alias rangerconf='cd /home/rc/.config/ranger/'
 
 #yadm stuff
 alias yadmrepo='cd /home/rc/.local/share/yadm/repo.git/'
