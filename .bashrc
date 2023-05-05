@@ -48,10 +48,10 @@ eval "$(starship init bash)"
 # export MANPAGER="nvim -c 'set ft=man' -"
 
 #myshellscripts
-export PATH="/home/rc/Documents/useful_command_info:$PATH"
+export PATH="$HOME/Documents/useful_command_info:$PATH"
 alias favcs='favorite_colorscripts.sh'
 
-export PATH="/home/rc/Documents/my_fun_term_scripts:$PATH"
+export PATH="$HOME/Documents/my_fun_term_scripts:$PATH"
 alias cclr='clear_colorscript.sh'
 
 #colorscript
@@ -68,18 +68,18 @@ alias nfd='sudo find / -name'
 alias ru='sudo su'
 
 #config directories
-alias conf='cd /home/rc/.config/'
-alias nvimconf='cd /home/rc/.config/nvim/lua/custom/'
-alias awesomeconf='cd /home/rc/.config/awesome/'
-alias bpytopconf='cd /home/rc/.config/bpytop/'
-alias kittyconf='cd /home/rc/.config/kitty/'
-alias polybarconf='cd /home/rc/.config/polybar/'
-alias roficonf='cd /home/rc/.config/rofi/'
-alias yadmconf='cd /home/rc/.config/yadm/'
-alias rangerconf='cd /home/rc/.config/ranger/'
+alias conf='cd $HOME/.config/'
+alias nvimconf='cd $HOME/.config/nvim/lua/custom/'
+alias awesomeconf='cd $HOME/.config/awesome/'
+alias bpytopconf='cd $HOME/.config/bpytop/'
+alias kittyconf='cd $HOME/.config/kitty/'
+alias polybarconf='cd $HOME/.config/polybar/'
+alias roficonf='cd $HOME/.config/rofi/'
+alias yadmconf='cd $HOME/.config/yadm/'
+alias rangerconf='cd $HOME/.config/ranger/'
 
 #yadm stuff
-alias yadmrepo='cd /home/rc/.local/share/yadm/repo.git/'
+alias yadmrepo='cd $HOME/.local/share/yadm/repo.git/'
 alias ya='yadm add'
 alias yau='yadm add -u'
 alias yaa='yadm add -A'
